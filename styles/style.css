@@ -10,7 +10,7 @@ body, html {
 }
 /* 背景 */
 .bg-image {
-  background-image: url('../images/1.png');
+  background-image: url('../images/1.jpg');
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
