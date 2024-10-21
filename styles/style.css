@@ -1,0 +1,160 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.icons{
+  position: absolute;
+  left: 92px;
+  top: 14px;
+}
+/* 背景 */
+.bg-image {
+  background-image: url('../images/1.png');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 中心图片 */
+.circle-image {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url('../images/113956889_p0.jpg');
+  background-size: 243px;
+  background-position: -18px 2px;
+}
+/* 按钮 */
+.buttons-container {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.button {
+  padding-top: 0%;
+  display: flex;
+  align-items: center; /* 垂直居中对齐 */
+  justify-content: center; /* 水平居中对齐 */
+  margin: 10px;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.3); /* 半透明背景 */
+  color: #333;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  width: 280px;
+  height: 30px;
+  position: relative;
+  }
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+/* 左下固定栏 */
+.fixbox{
+  width: 40px;
+  height: 200px;
+  background-color: rgba(0, 0,0, 0.2);
+  position: fixed;
+  right:10px;
+  bottom: 20px;
+  border-radius: 10px; 
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.fixboxitem{
+  background-color: rgba(243, 243, 243, 0);
+  font-size: 10px;
+  align-items: center;
+  flex: 1;
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  height: 100px; /* 需要一个高度值以应用垂直居中 */
+  border-radius: 10px;
+}
+.fixboxitem:hover{
+  background-color:rgba(255, 255, 255, 0.3)
+}
+
+
+
+/* 旋转效果 */
+  .loader1{
+    border: 1px solid transparent;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    transform-origin: center center;
+    animation: spin 2s linear infinite;
+    position: absolute;
+  }
+  .loader2{
+    border: 1px solid transparent;
+    border-left: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    transform-origin: center center;
+    animation: spin1 3.1s linear infinite;
+    position: absolute;
+  }
+  .loader3{
+    border: 1px solid transparent;
+    border-right: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    transform-origin: center center;
+    animation: spin 2.5s linear infinite;
+    position: absolute;
+  }
+  .loader4{
+    border: 1px solid transparent;
+    border-left: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    transform-origin: center center;
+    animation: spin1 2.2s linear infinite;
+    position: absolute;
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes spin1 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+  .box1{
+    position: absolute; 
+    height: 450px;
+    width: 450px;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    position:relative;
+    left: -130px;
+    top: -125px;
+  }
+  
